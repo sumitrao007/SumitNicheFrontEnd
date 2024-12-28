@@ -1,0 +1,29 @@
+			Welcome To Front End Module
+				  Sumit Raokhande
+
+- B.E.Electronics, KBP satara
+- M.Tech Electronics, Walchand College Sangli
+- C-Dac Wimc , Sunbeam pune
+- worked as Mobile Application developer at tivre business solution
+- worked on J2ME,Symbian,Windows Mobile,Reaserach Motion
+- Worked as Android developer at veetron 
+- Worked as JDE Developer of Oracle Product
+- Worked as OpenSDK developer
+- work as angular developer
+- work on google cloud & docker
+
+Download Code Stuff Here 
+https://github.com/sumitrao007/SumitNicheFrontEnd.git
+
+- Session Should on Time 6pm we have to start 
+- Basics of HTML 
+- Basics of CSS 
+- JavaScript
+- Angular Framework
+- Duration 80 Hrs 
+- Daily 2hrs Session avg time Duration 2hrs it may be less or more depends upon time 
+- We will do the project as per industry coding standard.
+- All Codes are avialable  on github
+- Hands on Practice => In between session 
+- Two way Communication Needed
+
