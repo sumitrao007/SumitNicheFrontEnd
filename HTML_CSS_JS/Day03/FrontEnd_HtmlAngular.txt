@@ -1,0 +1,58 @@
+Last Lecture Agenda
+1 Form Tag
+	
+	<fieldset>
+		<legend>....</legend>
+		
+		<form action="" method="">
+			<label for="username">Username:: &nbsp; </label>
+			<input type="text" palceholder="Enter the username" id="username" name="username" value="admin" required ><br><br>
+			<label for="username">Username:: &nbsp; </label>
+			<input type="password" palceholder="Enter the username" id="username" name="username" value="admin" required ><br><br>
+			
+			<label for="username">Username:: &nbsp; </label>
+			<input type="email" palceholder="Enter the username" id="username" name="username" value="admin" required ><br><br>
+			
+			<label for="username">Username:: &nbsp; </label>
+			<input type="number" palceholder="Enter the username" id="username" name="username" value="admin" required ><br><br>
+			
+			<label for="username">Username:: &nbsp; </label>
+			<input type="tel" palceholder="Enter the username" id="username" name="username" value="admin" required ><br><br>
+			
+			<label for="username">Username:: &nbsp; </label>
+			<input type="radio" palceholder="Enter the username" id="username" name="username" value="admin" required ><br><br>
+			<input type="radio" palceholder="Enter the username" id="username" name="username" value="admin" required value="male"><br><br>
+			
+			<input type="checkbox" checked palceholder="Enter the username" id="username" name="username" value="admin" required value="core java" ><br><br>
+			
+			<select >
+				<option> India</option>
+				....
+			</select>
+			
+			<label for="username">Username:: &nbsp; </label>
+			<input type="range" max="1000" min="10" step="1" id="username" name="username" value="admin" required ><br><br>
+			
+			<label for="username">Username:: &nbsp; </label>
+			<input type="date" palceholder="Enter the username" id="username" name="username" value="admin" required ><br><br>
+			
+			<label for="username">Username:: &nbsp; </label>
+			<input type="file" accept="image/*" id="username" name="username" value="admin" required ><br><br>
+			
+			<label for="username">Username:: &nbsp; </label>
+			<input type="submit" value="sumit" ><br><br>
+			
+			
+		</form>
+		
+	</fieldset>
+
+2 Input tag
+
+
+Today's Lecture Agenda
+1 Table 
+2 Image 
+3 anchor => If u want to navigate from one page to another page
+4 details
+5 summary
