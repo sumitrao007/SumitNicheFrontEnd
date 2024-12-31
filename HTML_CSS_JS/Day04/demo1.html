@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <pre>
+        public String addCountry(Country c) {
+            Session session=null;
+            Transaction tx=null;
+            String msg=null;
+            
+            try {	
+            session=factory.openSession();
+            tx=session.beginTransaction();
+            session.persist(c);		
+            tx.commit();
+            
+            msg="Coutry Addedd Successfully..";
+            }catch (Exception e) {
+                if(tx!=null) {
+                    tx.rollback();
+                }
+                
+                e.printStackTrace();
+            }finally {
+                if(session!=null) {
+                    session.close();
+                }
+                
+            }		
+            return msg;
+        }
+    </pre>
+
+    <audio controls >
+        <source src="audio/Ae Watan - Female (Raazi) 128 Kbps.mp3">
+    </audio>
+    <hr>
+
+    <video controls>
+        <source src="video/Tum Se Hi X Hare Krishna.mp4">
+    </video>
+
+<hr>
+<iframe width="914" height="514" src="https://www.youtube.com/embed/jBBTYKIgNT8?list=PLa3i9wpSPojEDNTe66s5XhXPSd50XqjSv" title="Angular  Architecture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr>
+
+
+
+
+
+</body>
+</html>

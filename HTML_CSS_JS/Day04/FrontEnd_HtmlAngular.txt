@@ -1,0 +1,38 @@
+Last Lecture Agenda
+1 Table 
+	<table>
+		<thead>
+			<tr>
+				<th>...</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>...</td>
+				...
+			</tr>
+		</tbody>
+	</table>
+	
+2 Image 
+	<a href="#div1" target="_blank"><img src="image/bg2.jpg" alt=""> </a>
+3 anchor => If u want to navigate from one page to another page
+	<a href="contact.html" target="_blank">Contact </a>
+	
+	<div id="div1">
+		.....
+	</div>
+	
+4 details
+	<details>	
+		<summary> Core Java</summary>
+			<p>...</p>
+	</details>
+	
+5 summary
+
+Today's Lecture Agenda
+1 pre
+2 audio
+3 video
+4 icon
