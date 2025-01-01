@@ -1,0 +1,31 @@
+Last Lecture Agenda
+1 pre
+	<pre>
+		....
+	</pre>
+	
+2 audio
+	<audio controls>
+		<source ...>
+	</audio>
+	
+3 video
+	
+4 icon
+	<link rel="icon" href="...">
+
+Today's Lecture Agenda
+1 CSS 
+	- Add styling
+	- To design web page 
+	- To Make pages attractive & interactive
+	- to make application responsive 
+	- apply animations
+2 Types of CSS 
+	1 Inline 
+	2 internal 
+	3 external 
+3 What is CSS Box Model?
+
+	
+

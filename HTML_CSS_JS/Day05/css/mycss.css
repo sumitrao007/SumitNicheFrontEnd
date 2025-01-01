@@ -1,0 +1,17 @@
+.mydiv{
+    color: red;
+    background-color: aquamarine;
+    border: solid blue;
+    width: 350px;
+    height: 250px;
+    /* border: dotted blue; */
+    padding: 20px;
+    margin: 16px;
+    border-radius: 2em;
+}
+
+img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
