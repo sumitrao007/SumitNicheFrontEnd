@@ -1,0 +1,74 @@
+Last Lecture Agenda
+1 CSS 
+	- Add styling
+	- To design web page 
+	- To Make pages attractive & interactive
+	- to make application responsive 
+	- apply animations
+2 Types of CSS 
+	1 Inline 
+		<h2 style="color:blue;">...</h2>
+		<body style="background-image:url('image/...')"
+	2 internal 
+		<style>
+			p{
+				color:blue;
+			}
+			
+			.myclass{
+				....
+			}
+			
+			#myid{
+			....
+			}
+			
+		
+		</style>
+		
+		<p class="myclass">
+		...
+		</p>
+		
+		<p id="myid">
+		...
+		</p>
+	3 external 
+	mycss.css 
+	...
+	div{
+		....
+	}
+	
+	.mydiv{
+	....
+	}
+	
+	#mydivid{
+		
+	}
+	
+	
+	demo2.html
+	
+	<head>
+		<link rel="stylesheet" href="...">
+		
+		<div>
+			...
+		</div>
+		
+		<div class="mydiv">
+			...
+		</div>
+		
+		<div id="mydivid">
+			...
+		</div>
+3 What is CSS Box Model?
+
+Today's Lecture Agenda
+1 CSS Continue
+
+	
+

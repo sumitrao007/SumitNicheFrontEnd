@@ -1,0 +1,70 @@
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+tr,th,td{
+    border: 1px solid;
+    
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    opacity: 0.5;
+}
+
+img:hover{
+    opacity: 1.0;
+}
+
+ul{
+    list-style: none;
+}
+
+.mainNav{
+   display: flex;
+   
+}
+.mainNav li{
+    margin: 12px;
+}
+
+li.push-Right{
+    margin-left: auto;
+    /* float: right; */
+}
+
+.mybtn{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 2.5s;
+}
+
+.redBtn{
+    border: 2px solid red;
+}
+
+.greenBtn{
+    border: 2px solid green;
+}
+
+.blueBtn{
+    border: 2px solid blue;
+}
+
+.redBtn:hover{
+    background-color: red;
+    color: white;
+}
+
+.greenBtn:hover{
+    background-color: green;
+    color: white;
+}
+
+.blueBtn:hover{
+    background-color: blue;
+    color: white;
+}
+

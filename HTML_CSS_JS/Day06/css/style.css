@@ -1,0 +1,24 @@
+body{
+    background-color: red;
+    color: white;
+    /* animation: myanimation 8s linear 2s infinite alternate; */
+    animation:myanimation 8s linear 2s infinite alternate;
+}
+
+@keyframes myanimation{
+    0%{
+        background-color:aquamarine;
+      }
+      25%{
+        background-color:yellow;
+      }
+      50%{
+        background-color:orange;
+      }
+      75%{
+        background-color:magenta;
+      }
+      100%{
+        background-color: rgb(200, 183, 196);
+      }
+}
