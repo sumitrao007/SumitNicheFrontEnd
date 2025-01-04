@@ -1,0 +1,31 @@
+Last Lecture Agenda
+1 Introduction Of JS 
+	- we can perform action on web pages
+	- we can manipulate the behaviour of html element 
+	- Validation we can achieve 
+	- vanila JS 
+2 Environmental setup 
+3 variable
+	var a;
+	var a=10;
+	
+	console.log("Value of a is "+a)
+	console.log('Value of a is '+a)
+	
+4 Back tick Operator
+	console.log(`
+		Value of a ${a}
+	`);
+
+
+Today's Lecture Agenda
+1 Operators
+2 Control statement
+3 Loop
+4 Functions
+5 var Vs let Vs const 
+6 annonymous Function 
+
+
+	
+
