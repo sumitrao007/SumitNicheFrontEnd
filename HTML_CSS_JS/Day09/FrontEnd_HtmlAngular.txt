@@ -1,0 +1,59 @@
+Last Lecture Agenda
+1 Operators
+	==,===
+2 Control statement
+	if,if-else,nested if-else ,switch,break,contine,return...
+3 Loop
+	while, do-while , for 
+	for(var i=0;i<4;i++){
+	...
+	}
+4 Functions
+	function add1(){
+	
+	}
+	add1();
+	function add1(a,b){
+	...
+	}
+	add1(2,3);
+	function add1(){
+		return (8+8)
+	}
+	let res=add1();
+	...
+	
+	function add1(a,b){
+		return (a+b)
+	}
+	let res=add1(40,6);
+	
+	
+5 var Vs let Vs const 
+	for(let i=0;i<4;i++){
+	...
+	}
+	const pi=3.14;
+	
+6 annonymous Function 
+ let temp1=	function (){
+		....
+	}
+temp1();
+
+let temp1=	function (a,b){
+		return (a+b)
+	}
+let res= temp1(10,5);
+
+Today's Lecture Agenda
+1 fat arrow function	
+2 Array basic
+3 foreach
+4 push & pop
+5 splice
+6 map
+
+
+	
+
