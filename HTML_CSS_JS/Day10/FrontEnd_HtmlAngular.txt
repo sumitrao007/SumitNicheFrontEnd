@@ -1,0 +1,52 @@
+Last Lecture Agenda
+1 fat arrow function	
+	let temp1=()=>{
+		...
+	}
+	
+	temp1();
+	
+	let temp1=(a,b)=>{
+		return (a+b);
+	}
+	
+	let res=temp1();
+	...
+	
+2 Array basic
+	let a=[10,20,30];
+	let a=[];
+	let a=[2.5,'sumit',true];
+	
+	console.log(a);
+	console.log(a.join(" "));
+	
+3 foreach
+	a.forEach((myvalue,i,arr)=>{
+		...
+	});
+4 push & pop
+	a.push(10);
+	a.pop();
+	
+5 splice
+	a.splice(1,0,80);
+	a.splice(2,1);
+	a.splice(3,1,75);
+	
+6 map
+let sqrarr=	a.map((value)=>{
+		return (value*value);
+	});
+	
+
+Today's Lecture Agenda
+1 json Object
+2 Array of Object 
+3 Alert box
+4 prompt box 
+5 confirm box 
+
+
+	
+
