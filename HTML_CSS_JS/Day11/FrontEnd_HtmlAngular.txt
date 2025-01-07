@@ -1,0 +1,92 @@
+Last Lecture Agenda
+1 json Object
+	let jsonObj={
+		id:9,
+		fname:"Sumit"
+	}
+	console.log(
+		jsonObj.id 
+	)
+2 Array of Object 
+	let arrobj=[
+		{
+			id:9,
+			fname:"Sumit",
+			lname:"...",
+			country:{
+				cid:..,
+				cname:''
+			},
+			month:[...],
+			result:[
+				{
+					subj:"m1",
+					marks:40
+				},
+				{
+					subj:"m1",
+					marks:40
+				}...
+			]
+		},
+		{
+			id:9,
+			fname:"Sumit",
+			lname:"..."
+		}
+	]
+	
+	for(let i=0;i<arrobj.length;i++){
+	
+		console.log(
+			arrobj[i].id
+			...
+			arrobj[i].country.cname
+			arrobj[i].month.join(" ")
+		);
+		for(let j=0;j<arrobj[i].result.length;j++){
+			arrobj[i].result[j].subj
+			...
+		}
+	
+	}
+3 Alert box
+4 prompt box 
+5 confirm box 
+	demo1.html
+		<link ...>
+		...
+		<body>
+			<button onclick="onAlert()" >Alert Box</button>
+			<button onclick="onpromt()" >Prompt Box</button>
+			<button onclick="onConfirm()" >Confirm Box</button>
+			....
+		<script src="demo.js">
+		
+		demo.js
+		function onAlert(){
+			alert("");
+		}
+		
+		function onpromt(){
+			let res= prompt("..")
+			...
+		}
+		
+		function onConfirm(){
+			if(confirm("")){
+			....
+			}else{
+				...
+			}
+		}
+
+Today's Lecture Agenda
+1 What is DOM? & What is DOM Structure 
+2 How to Access DOM Element?
+3 Simple Application
+4 onchange event
+
+
+	
+
