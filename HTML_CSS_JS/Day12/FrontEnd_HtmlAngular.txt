@@ -1,0 +1,42 @@
+Last Lecture Agenda
+1 What is DOM? & What is DOM Structure 
+2 How to Access DOM Element?
+3 Simple Application
+<input id="input1">
+<input id="input2">
+<button onclick="onAddition()" >Addition</button>
+<div id="result">
+
+</div>
+
+demo1.js
+
+function onAddition(){
+	let num1= document.getElementById("input1");
+	let num2= document.getElementById("input2");
+	let dispalyData= document.getElementById("result");
+	
+	
+	let n1=parInt(num1.value);
+	let n2=parInt(num2.value);
+	let res=n1+n2;
+	dispalyData.innerHtml=`<h2>.... ${res}</h2> `
+	
+}
+4 onchange event
+	<input onchange="onChange()" id="myname">
+	
+	.js 
+	
+	function onChange(){
+		let name=document.getElementById("myname");
+		name.style.background="green";
+		name.style.color="white";
+	}
+
+Today's Lecture Agenda
+1 JS Validations
+
+
+	
+
