@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <form action="" onsubmit="return validation()">
+
+        <label for="">Username::&nbsp;&nbsp;</label>
+        <input type="text" name="username" id="username" placeholder="Enter the Name">
+        <span id="userError" style="color: red;"></span>
+        <br><br>
+
+        <label for="">password::&nbsp;&nbsp;</label>
+        <input type="password" name="password" id="password" placeholder="Enter the password">
+        <span id="passwordError" style="color: red;"></span>
+        <br><br>
+
+        <label for="">Confirm password::&nbsp;&nbsp;</label>
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Enter the Confirm password">
+        <span id="confirmpasswordError" style="color: red;"></span>
+        <br><br>
+        <label for="">Mobile Number::&nbsp;&nbsp;</label>
+        <input id="mobileno" name="mobileno" type="number" placeholder="Enter the Phone Number">
+        <span id="mobileError" style="color: red;"></span>
+        <br><br>
+
+        <label for="">Email ID::&nbsp;&nbsp;</label>
+        <!-- <input id="email" name="email" type="email" placeholder="Enter the Email Id"> -->
+
+        <input id="email" name="email" type="text" placeholder="Enter the Email Id">
+
+        <span id="emailError" style="color: red;"></span>
+        <br><br>
+
+
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <script src="js/demo1.js"></script>
+</body>
+</html>
