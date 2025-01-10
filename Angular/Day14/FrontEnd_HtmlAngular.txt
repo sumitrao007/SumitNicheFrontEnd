@@ -1,0 +1,9 @@
+Last Lecture Agenda
+1 JS Validations
+
+Today's Lecture Agenda
+1 Angular Setup 
+
+
+	
+
