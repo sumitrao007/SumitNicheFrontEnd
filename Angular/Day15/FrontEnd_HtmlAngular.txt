@@ -1,0 +1,20 @@
+Last Lecture Agenda
+1 Angular Setup
+
+Today's Lecture Agenda
+1 Application Flow 
+2 Component Creation
+	- 2 way 
+	1 manually component
+		- we have to create each file => .ts,.html,.css
+	2 Through the Cli 
+		- ng g c employee
+			1 .html
+			2 .css 
+			3 .ts => template code write 
+			4 .spec.ts 
+  
+
+
+	
+
