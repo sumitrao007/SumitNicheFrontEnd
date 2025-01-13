@@ -1,0 +1,14 @@
+<p>classbinding works!</p>
+
+<!-- 
+    - If u want apply class binding dynamically then we go for class binding 
+    - u can apply any html tag 
+    syntax 
+    [class]="propertyName"
+
+-->
+<h2 [class]="myclass" >Apply class Binding</h2>
+
+<h2 [class.danger]="rating<4" 
+    [class.warning]="rating>4"
+>Apply class Binding on condition</h2>
