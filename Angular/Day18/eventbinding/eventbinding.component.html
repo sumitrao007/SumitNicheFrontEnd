@@ -1,0 +1,35 @@
+<p>eventbinding works!</p>
+<!-- 
+    - U can send data/request using event binding 
+    - U can apply any html tag 
+    syntax 
+        (eventName)="eventHandler"
+
+    - eventName => It is pre-defined event name given by angular
+    - eventHandler => we create our own custom method, that method we can use as event handler
+-->
+
+<button (click)="onClick()" class="btn btn-success">Click</button>
+<br><br>
+
+<img title="Click Image" (click)="onImage()" src="../../assets/bg4.jpg" alt="">
+<hr>
+
+<!-- 
+    template ref Variable
+    - if u want to access html input data the we can use template ref variable 
+    - if u want to access html element object then we use template ref variable 
+    - u can manipulate the baheviour of html element
+    - synatx 
+    - #uniquename 
+    - u can apply any html tag 
+    - template ref vari. is holding the object of html element
+    - with the help object we can manipulate the behaviour or access the data 
+-->
+
+<input #inputname class="form-control w-25" type="text" placeholder="Enter the Name"><br><br>
+<button (click)="onSend(inputname)" class="btn btn-success">Send</button>
+
+
+
+
