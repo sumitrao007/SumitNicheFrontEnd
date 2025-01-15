@@ -1,0 +1,56 @@
+Last Lecture Agenda
+1 Class Binding
+	
+	<div [ngClass]="jsonObj">
+	
+	.ts 
+	isError:boolean=true;
+	isSpecial:boolean=true;
+	jsonObj={
+		"success":!this.isError,
+		"dnager":this.isError,
+		"special":this.isSpecial
+	}
+	
+2 event Binding
+	
+3 Click => 
+	It is event 
+	<button (click)="onClick()">
+	<img (click)="onImage()" src="...">
+	
+	.ts 
+	isFlag:boolean=true;
+	onClick(){
+	...
+	..
+	
+	
+	}
+	
+	onImage(){
+	....
+	}
+	
+4 template ref Variable
+	
+	<input #inputname>
+	<button (click)="onSend(inputname)">
+	
+	.ts 
+	
+	onSend(myname:any){
+		console.log(myname.value);
+		myname.style.background="..."
+		
+	}
+
+Today's Lecture Agenda
+1 template ref Variable continue	
+2 Real time Example
+3 Two Way Data Binding 
+
+
+
+	
+
