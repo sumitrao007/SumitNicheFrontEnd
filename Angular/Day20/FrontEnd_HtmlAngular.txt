@@ -1,0 +1,46 @@
+Last Lecture Agenda
+1 template ref Variable continue	
+	
+	<input #inputname>
+	<button (click)="onSend(inputname.value)">
+	.ts 
+	onSend(myname:string){
+		console.log(myname)
+	}
+
+2 Real time Example
+
+	<input #num1>
+	<input #num2>
+	<button (click)="onAddition(num1.value,num2.value)">
+	<input [value]="result">
+	
+	.ts 
+	result!:number
+	onAddition(num1:any,num2:any){
+		let n1=+num1;
+		let n2=+num2;
+		this.result=n1+n2;
+	}
+
+3 Two Way Data Binding 
+	<input [(ngModel)]="name"> {{name}}
+	
+	.ts 
+	name:string='';
+
+Today's Lecture Agenda
+1 Structural Directives
+	- to modify/manipulate ur DOM Structure dynamically for that we use structural directive
+	1 *ngIf => if u want to check condition dynamically and mofify ur DOM Structure according that 
+	2 *ngFor => if u want iterate dynamically then we use 
+	3 *ngSwitch => To execute a specific case for that we use 
+	
+3 *ngIf directive
+ <ng-template> => It is component Directive 
+4 *ngFor
+
+
+
+	
+
