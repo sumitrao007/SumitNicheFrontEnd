@@ -1,0 +1,51 @@
+Last Lecture Agenda
+1 *ngSwitch
+	<input #inputcolor>
+	<button (click)="onSend(inputcolor.value)">
+	
+	<div [ngSwitch]="choice" >
+	
+		<div *ngSwitchCase="'red'"
+			[style.background]="choice"
+		>U r color name {{choice}}</div>
+		<div *ngSwitchCase="'green'">U r color name {{choice}}</div>
+		
+		..
+		<div *ngSwitchCaseDefault 
+			[ngStyle]="{
+			'background': choice==''?'black':'orange',
+			'color':choice==''?'white':'black'
+			
+			}"
+			
+		>U r color name {{choice}}</div>
+	
+	</div>
+	
+	.ts 
+	choice:string='';
+	onSend(colorname:string){
+		this.choice=colorname.toLowerCase().trim();
+		
+	}
+2 Component Interaction
+	- U can send data from one comp1 to another & vice versa.
+	- pre-requiest => Parent-child relation is required 
+	
+Today's Lecture Agenda
+1 @Input()
+	- to send data from parent to child 
+	
+2 @Output()
+	- To send data from Child to parent 
+	- U have to create a custom event 
+	- For that we use EventEmitter class
+	- child2 to parent2 
+3 inbuild Pipe 
+	- to transform ur data without changing its value 
+
+
+
+
+	
+
