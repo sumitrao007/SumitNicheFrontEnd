@@ -1,0 +1,88 @@
+Last Lecture Agenda
+1 @Input()
+	- to send data from parent to child 
+	
+	app.html
+	<app-parent1></app-parent1>
+	
+	parent1.html
+	
+	<app-child1 [parentStrData]="strData" ></app-child1>
+	
+	parent1.ts 
+	strData:string="....";
+	
+	child1.ts
+	@Input() parentStrData:string=''
+	
+	child1.html
+	<h2> {{parentStrData}}</h2>
+	
+	
+	
+2 @Output()
+	- To send data from Child to parent 
+	- U have to create a custom event 
+	- For that we use EventEmitter class
+	- child2 to parent2 
+	
+	child2.html
+	<button (click)="onSend()">
+	
+	child2.ts 
+	
+	@Output() childStrEvent=new EventEmitter();
+	strdata:string=''
+	
+	onSend(){
+		this.childStrEvent.emit(this.strdata);
+	}
+	
+	{{strDataReceived}}
+	
+	<child2 (childStrEvent)="strDataReceived=$event" >
+	
+	parent2.ts 
+	strDataReceived:string='';
+	
+3 inbuild Pipe 
+	- to transform ur data without changing its value 
+	<h2> {{strdata | lowercase}}</h2>
+	<h2> {{strdata | uppercase}}</h2>
+	<h2> {{strdata | titlecase}}</h2>
+	
+	<h2> {{0.25 | percent}}</h2>
+	<h2> {{0.025 | percent}}</h2>
+	<h2> {{0.025 | percent:'1.1'}}</h2>
+	
+	<h2> {{0.25 | currency}}</h2>
+	<h2> {{0.25 | currency:'INR'}}</h2>
+	<h2> {{0.25 | currency:'INR':'code'}}</h2>
+	
+	
+Today's Lecture Agenda
+1 inbuild Pipe 
+2 Custom Pipe 
+	- PipeTransform => interface
+	- transform(value:any,...args:any)
+3 Http Services
+	- It is used to connect ur front end to backend server 
+	steps 
+	1 To create a service => http service => its our custom service 
+	2 To use http method for that we have to use HttpClientModule to import in app.module.ts file 
+		http method 
+			1 get => it is fetch a data from backend server 
+			2 post => To send a data to your backend server from front end server 
+			3 put => To update a particular record
+			4 delete => To delete a particular record
+	3 To access these http method we have to create dependancy injection in our custom service 
+		HttpClient 
+ HttpRequest & HttpResponse 
+ https://jsonplaceholder.typicode.com/posts
+ - It is a dummy backend give by community 
+ - It is a fake service 
+ - bcz it is not store data into the database but it gives a response of ur request 
+
+
+	
+
