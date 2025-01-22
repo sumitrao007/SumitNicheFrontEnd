@@ -1,0 +1,34 @@
+Last Lecture Agenda
+1 inbuild Pipe 
+2 Custom Pipe 
+	- PipeTransform => interface
+	- transform(value:any,...args:any)
+3 Http Services
+	- It is used to connect ur front end to backend server 
+	steps 
+	1 To create a service => http service => its our custom service 
+	2 To use http method for that we have to use HttpClientModule to import in app.module.ts file 
+		http method 
+			1 get => it is fetch a data from backend server 
+			2 post => To send a data to your backend server from front end server 
+			3 put => To update a particular record
+			4 delete => To delete a particular record
+	3 To access these http method we have to create dependancy injection in our custom service 
+		HttpClient 
+ HttpRequest & HttpResponse 
+ https://jsonplaceholder.typicode.com/posts
+ - It is a dummy backend give by community 
+ - It is a fake service 
+ - bcz it is not store data into the database but it gives a response of ur request 
+
+	
+	
+Today's Lecture Agenda
+1 Connection with backend server 
+2 get
+3 post
+4 put
+5 delete
+
+	
+
