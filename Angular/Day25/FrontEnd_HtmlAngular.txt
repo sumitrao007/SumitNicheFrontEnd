@@ -1,0 +1,80 @@
+Last Lecture Agenda
+1 Connection with backend server 
+2 get
+	
+	httservice.ts 
+	getData(){
+		return (this.http.get(this.baseUrl));
+	}
+	
+	postData(obj:any){
+		return (this.http.post(this.baseUrl,obj))
+	}
+	
+	post.ts 
+	class PostComponet implement onInit
+	{
+	posts:any[]=[];
+	constructor(private service:HttpService){}
+		
+		ngonInt(){
+			this.getDataBackend();
+		}
+		getDataBackend(){
+			this.service.getData()
+			.subscribe((myresponse:any)=>{
+				...
+				this.posts=myresponse;
+			})
+		}
+		
+		onSend(mytitle:any,mybody:any){
+		
+			let obkj={
+				title:mytitle,
+				bpdy:mybody
+			}
+			
+			this.service.postDate(obj)
+			.subscribe((response)=>{
+				console.log(response)
+			})
+		
+		}
+		
+		.html
+		
+		<div>
+			<input #mytitle>
+			<input #mybody>
+			<button (click)="onSend(mytitle.value,mybody.value)"
+		
+		</div>
+		
+		table
+			...
+			
+		<tbody>
+			<tr *ngFor="let item of posts">
+				<td> {{item.id}}</td>
+				....
+				
+	
+3 post
+4 put
+	
+Today's Lecture Agenda
+1 put continue
+2 delete
+3 Error Handling
+4 routing 
+	- navigation from one component to another component
+	- with the help of routing u can send a parameter to component
+	
+	Steps
+	1 to write Route configuration => configure the route 
+	2 use <router-outlet> => It is component directive 
+	3 establish the link/navigate in between the component
+
+	
+
