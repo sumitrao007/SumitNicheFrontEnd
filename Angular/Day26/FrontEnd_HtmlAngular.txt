@@ -1,0 +1,23 @@
+Last Lecture Agenda
+1 put continue
+2 delete
+3 Error Handling
+4 routing 
+	- navigation from one component to another component
+	- with the help of routing u can send a parameter to component
+	
+	Steps
+	1 to write Route configuration => configure the route 
+	2 use <router-outlet> => It is component directive 
+	3 establish the link/navigate in between the component
+
+5 Emty path
+6 Wild cart operator	
+	
+Today's Lecture Agenda
+1 establish the link/navigate in between the component
+2 send parameter
+3 dynamic routing
+	- If I want to navigate from ts file then we have to use navigate method 
+	
+
