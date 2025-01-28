@@ -1,0 +1,70 @@
+Last Lecture Agenda
+1 establish the link/navigate in between the component
+
+<a routerLink="/page1">Page1</a>
+....
+
+2 send parameter
+	{
+		path:"page2/:id"
+	}
+	home.ts
+	myid:number=9;
+	.html
+	<a [routerLink]="['/page2',myid]">
+	
+	page2.ts 
+	
+	constructor(private route:ActivatedRoute){}
+	
+	onInit(){
+		this.getDataFromUrl();
+	}
+	
+	getDataFromUrl(){
+		this.route.paraMap
+		.subscribe((param)=>{
+			param.get("id");
+		})
+	}
+	
+3 dynamic routing
+	- If I want to navigate from ts file then we have to use navigate method 
+	
+	<button (click)="onPage2()">
+	
+	.ts 
+	
+	constructor(private router:Router){
+	}
+	
+	onPage2(){
+		this.router.navigate(['/Page2',this.myid]);
+		
+	}
+	
+
+Today's Lecture Agenda
+1 Template Driven Form (TDF)
+	- login form ,signup ,F/b form 
+	- Basic level validation is Provided
+	- All validation is performed on View File 
+2 FormControl
+	- It is simple Class 
+	Property 
+	1 Valid => true / false 
+	2 invalid => true /false 
+	3 Touched => true / false 
+	4 pristine => true / false 
+	5 Dirty  => true / false
+	6 errors => Object => true/false 
+	
+3 How to use FormControl
+	
+	steps 
+	 1 To create Object/ instance of FormControl 
+		we have to use ngModel we never use banana in the box noation & we hv to use name attribute
+	 2 create template ref. variable & assign it ngModel.
+	 3 we have to use errors object for that we use required attribute
+	
+

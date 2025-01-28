@@ -1,0 +1,44 @@
+<p>demotdf works!</p>
+
+<div class="container">
+    <div class="row">
+
+        <div class="mt-3 mb-2">
+            <label for="">Username::</label>
+            <input type="text" class="form-control"
+            placeholder="Enter the Username.."
+            minlength="5"
+            ngModel name="myusername"
+            #username="ngModel" required>
+
+            <div *ngIf="username.touched && !username.valid "
+            class="alert alert-danger">
+            ** Please Enter the Username
+            <div *ngIf="username.errors?.['minlength']">
+                ** Please Enter  minimum {{username.errors?.['minlength'].requiredLength}} Characters
+            </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="mt-3 mb-2">
+            <label for="">Comment::</label>
+            <textarea ngModel name="comment" id="" 
+            #comment="ngModel" required 
+            class="form-control" placeholder="Enter the comment">
+
+            </textarea>
+
+            <div *ngIf="comment.touched && comment.invalid"
+            class="alert alert-danger">
+                ** Please Enter the Comment 
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
