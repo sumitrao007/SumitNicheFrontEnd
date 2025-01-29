@@ -1,0 +1,62 @@
+<p>demotdf works!</p>
+
+<div class="container">
+    <div class="row">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+            {{f.value | json}}
+        <div class="mt-3 mb-2">
+            <label for="">Username::</label>
+            <input type="text" class="form-control"
+            placeholder="Enter the Username.."
+            minlength="5"
+            ngModel name="myusername"
+            #username="ngModel" required>
+
+            <div *ngIf="username.touched && !username.valid "
+            class="alert alert-danger">
+            ** Please Enter the Username
+            <div *ngIf="username.errors?.['minlength']">
+                ** Please Enter  minimum {{username.errors?.['minlength'].requiredLength}} Characters
+            </div>
+            </div>
+        </div>
+
+        <div class="mt-3 mb-2">
+            <label for="">Comment::</label>
+            <textarea ngModel name="comment" id="" 
+            #comment="ngModel" required 
+            class="form-control" placeholder="Enter the comment">
+
+            </textarea>
+
+            <div *ngIf="comment.touched && comment.invalid"
+            class="alert alert-danger">
+                ** Please Enter the Comment 
+            </div>
+
+        </div>
+
+        <div class="mt-3 mb-2">
+            <label for="">Email ID::</label>
+            <input type="text" class="form-control" 
+                [pattern]="EMAIL_PATTERN"
+                ngModel name="emailid" #email="ngModel" required
+            placeholder="Enter the Email ID">
+
+            <div *ngIf="email.touched && email.invalid"
+            class="alert alert-danger"> ** Please Enter the Email ID 
+
+            <div *ngIf="email.errors?.['pattern']">
+                ** Please Enter the Appropriate Email ID
+            </div>  
+
+            </div>
+
+        </div>
+
+        <button [disabled]="!f.valid" class="btn btn-outline-success">Submit</button>
+
+    </form>
+    
+</div>
+</div>

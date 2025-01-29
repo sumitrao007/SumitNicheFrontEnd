@@ -1,0 +1,31 @@
+Last Lecture Agenda
+1 Template Driven Form (TDF)
+	- login form ,signup ,F/b form 
+	- Basic level validation is Provided
+	- All validation is performed on View File 
+2 FormControl
+	- It is simple Class 
+	Property 
+	1 Valid => true / false 
+	2 invalid => true /false 
+	3 Touched => true / false 
+	4 pristine => true / false 
+	5 Dirty  => true / false
+	6 errors => Object => true/false 
+	
+3 How to use FormControl
+	
+	steps 
+	 1 To create Object/ instance of FormControl 
+		we have to use ngModel we never use banana in the box noation & we hv to use name attribute
+	 2 create template ref. variable & assign it ngModel.
+	 3 we have to use errors object for that we use required attribute
+	
+
+
+Today's Lecture Agenda
+1 TDF Continue
+2 ngForm
+3 ngSubmit => Event Directive 
+4 Email Validation
+5 json pipe
