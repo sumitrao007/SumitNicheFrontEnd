@@ -1,0 +1,30 @@
+.carousel-item img {
+    width: 100%;           /* Full width of the carousel */
+    object-fit: cover;      /* Ensures the image fills the container */
+    height: 300px;          /* Default height for medium screens (viewports) */
+  }
+
+  .carousel-inner{
+    margin-top: 1em;
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .carousel-item img {
+      height: 70vh;        /* Increase height for laptop screens */
+      object-fit: contain; /* Ensures the entire image is visible */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 30vh;        /* Adjust height for tablets and smaller screens */
+      object-fit: cover;   /* Crops image to fill the container */
+    }
+  }
+  
+  @media (min-width: 1441px) {
+    .carousel-item img {
+      height: 50vh;        /* Increase height for large screens */
+      object-fit: cover;   /* Ensures consistent scaling */
+    }
+  }

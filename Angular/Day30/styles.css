@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+body {
+    background-color: #d8d8d9;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .list-group-item a {
+    text-decoration: none;
+    color: #000;
+  }
