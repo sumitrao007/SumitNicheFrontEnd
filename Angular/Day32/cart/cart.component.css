@@ -1,0 +1,149 @@
+.cart-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .product-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .product-details {
+    flex: 1;
+  }
+  
+  h3 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .category {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .price,
+  .discount {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .discount {
+    color: #007bff;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .quantity button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .quantity button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .quantity #remove {
+    width: auto;
+    height: 30px;
+    font-size: 16px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+  }
+  
+  .quantity span {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .cart-summary {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .checkout-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .checkout-button:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 768px) {
+    .cart-container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .cart-item {
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .product-image {
+      margin-bottom: 10px;
+    }
+  
+    .product-details {
+      text-align: left;
+    }
+  
+    .quantity {
+      justify-content: center;
+    }
+  }
+  
