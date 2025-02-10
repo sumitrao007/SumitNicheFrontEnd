@@ -1,0 +1,43 @@
+<div class="d-flex flex-wrap product-container">
+    <div
+      
+      class="card shadow-sm m-2"
+      *ngFor="let product of products"
+      [ngStyle]="{
+        'flex': 'inherit',        
+      }"
+    >
+      <!-- Product Image -->
+      <img [src]="product.productImagePath" class="card-img-top" [alt]="product.name" />
+  
+      <!-- Card Body -->
+      <div class="card-body">
+        <!-- Product Name -->
+        <h1 class="card-title">{{ product.productTitle }}</h1>
+  
+        <!-- Product Description -->
+        <p class="card-text text-muted" [title]="product.description">
+          {{ product.description | slice: 0:50 }}...
+        </p>
+  
+        <!-- Product Price -->
+        <p class="fw-bold mb-1">{{ product.originalPrice | currency:'INR'}}</p>
+
+        <p class="discount">Discount Price: {{ product.sellingPrice|currency:'INR' }}</p>
+  
+        <!-- Product Rating -->
+        <div class="rating mb-2">
+          <span *ngFor="let star of [1, 2, 3, 4, 5]">
+            <i
+              class="bi" 
+              [ngClass]="star <= product.ratings ? 'bi-star-fill text-warning' : 'bi-star text-muted'
+              "
+            ></i>
+          </span>
+        </div>
+  
+        <!-- Add to Cart Button -->
+        <button (click)="onAddToCart(product)" class="btn btn-primary btn-sm w-100">Add to Cart</button>
+      </div>
+    </div>
+  </div>
