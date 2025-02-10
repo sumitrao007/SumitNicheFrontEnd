@@ -1,0 +1,23 @@
+@PostMapping("/create")
+	public ResponseEntity<String> saveProduct( @RequestParam("product") String productJson, @RequestParam("image") MultipartFile image)
+			 {
+//		System.out.println("Product add API Call...");
+		try {
+//			System.out.println("Inside Try Block...");
+			ObjectMapper objectMapper = new ObjectMapper();
+            Product product = objectMapper.readValue(productJson, Product.class);
+//            System.out.println("After Product Object retrive...");
+            // Process image and save the product logic here...
+//            System.out.println("Product Name: " + product.getProductTitle());
+//            System.out.println("Image: " + image.getOriginalFilename());
+            
+            service.saveProduct(product.getProductTitle(), product.getOriginalPrice(), product.getDiscountPercentage(), product.getDescription(), product.getProductQuantity(),
+            		product.getProductCategory(), image);
+            
+			return ResponseEntity.ok("Product saved successfully");
+		} catch (Exception e) {
+			e.printStackTrace();
+			return ResponseEntity.badRequest().body("Failed To save product");
+		}
+
+	}
