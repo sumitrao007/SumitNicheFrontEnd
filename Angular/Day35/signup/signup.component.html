@@ -1,0 +1,140 @@
+<app-header></app-header>
+
+
+<div class="signup-container">
+  <form #signupForm="ngForm" (ngSubmit)="onSubmit(signupForm)" novalidate >
+    <h5>Create Your Account</h5>
+
+    <!-- First Name -->
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        class="form-control"
+        placeholder="Enter the First Name"
+        ngModel
+        required
+        #firstName="ngModel"
+      />
+      <div class="error" *ngIf="firstName.invalid && firstName.touched">
+        First name is required.
+      </div>
+    </div>
+
+    <!-- Last Name -->
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        class="form-control"
+        placeholder="Enter the Last Name"
+        ngModel
+        required
+        #lastName="ngModel"
+      />
+      <div class="error" *ngIf="lastName.invalid && lastName.touched">
+        Last name is required.
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        [pattern]="EMAIL_PATTERN"
+        id="email"
+        name="email"
+        class="form-control"
+        ngModel
+        required
+        email
+        #email="ngModel"
+        placeholder="Enter the Email Id"
+      />
+      <div class="error" *ngIf="email.invalid && email.touched">
+        Please enter a valid email address.
+      </div>
+    </div>
+
+    <!-- Username -->
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        class="form-control"
+        ngModel
+        required
+        placeholder="Enter the Username"
+        #username="ngModel"
+      />
+      <div class="error" *ngIf="username.invalid && username.touched">
+        Please Enter the Username
+      </div>
+    </div>
+
+    
+    <!-- Password -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control"
+        placeholder="Enter the Password"
+        ngModel
+        required
+        minlength="4"
+        #password="ngModel"
+      />
+      <div class="error" *ngIf="password.invalid && password.touched">
+        Password must be at least 8 characters long.
+      </div>
+    </div>
+
+    <!-- Address -->
+    <div class="form-group">
+      <label for="address">address</label>
+      <input
+        type="text"
+        id="address"
+        name="address"
+        class="form-control"
+        ngModel
+        required
+        placeholder="Enter the Address city"
+        
+        #address="ngModel"
+      />
+      <div class="error" *ngIf="address.invalid && address.touched">
+        Please Enter the address
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="role">Role </label>
+      <select ngModel
+      required name="role" id="role" class="form-control">
+        <option value="">Select Role</option>
+        <option value="SELLER">Seller</option>
+        <option value="BUYER">Buyer</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="signupForm.invalid">
+      Sign Up
+    </button>&nbsp;&nbsp;
+    <a routerLink="/login">? alerady register</a>
+  </form>
+</div>
+
+<hr>
+
+<app-footer class="fixed-bottom"></app-footer>

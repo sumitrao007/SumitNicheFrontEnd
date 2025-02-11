@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="login-container">
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" novalidate >
+    <h5>Login Your Account</h5>
+
+    
+    <!-- Email -->
+    <div class="form-group">
+      <label for="username">username</label>
+      <input
+        type="text"       
+        id="username"
+        name="username"
+        class="form-control"
+        ngModel
+        required          
+        #username="ngModel"
+      />
+      <div class="error" *ngIf="username.invalid && username.touched">
+        Please enter a valid username .
+      </div>
+    </div>
+
+    
+    <!-- Password -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control"
+        ngModel
+        required
+        minlength="8"
+        #password="ngModel"
+      />
+      <div class="error" *ngIf="password.invalid && password.touched">
+        Password must be at least 8 characters long.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">
+      Login
+    </button>&nbsp;&nbsp;
+    <a routerLink="/sign-up">Sign up Here</a>
+  </form>
+</div>
+
+
+  
+  <app-footer class="fixed-bottom"></app-footer>
+  
