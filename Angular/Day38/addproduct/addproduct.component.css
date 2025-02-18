@@ -1,0 +1,45 @@
+.container {
+  max-width: 600px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.text-danger {
+  font-size: 14px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+
+.rating {
+  font-size: 1.5rem;
+  color: #ffd700;
+  cursor: pointer;
+}
+
+.rating .bi-star {
+  color: #ddd;
+}
+
+.rating .bi-star-fill {
+  color: #ffd700;
+}
+
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+}

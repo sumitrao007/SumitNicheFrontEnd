@@ -1,0 +1,116 @@
+<app-header></app-header>
+
+
+<div class="container mt-2 mb-3">
+    <div class="card shadow p-4">
+      <h2 class="text-center text-primary mb-4">Update Product</h2>
+      
+      <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm,inputFile)" novalidate>
+  
+        <!-- Product Name -->
+        <div class="mb-3">
+          <label class="form-label">Product Name</label>
+          <input type="text" class="form-control" 
+          placeholder="Enter the Product Name"
+          name="productTitle" [(ngModel)]="product.productTitle" required #productTitle="ngModel" />
+          <div class="text-danger" *ngIf="productTitle.invalid && productTitle.touched">
+            Product name is required.
+          </div>
+        </div>
+  
+        <!-- Product Price -->
+        <div class="mb-3">
+          <label class="form-label">Product Price (INR)</label>
+          <input type="number" class="form-control" 
+          placeholder="Enter the Product Price"
+          name="originalPrice" [(ngModel)]="product.originalPrice" required min="1" #originalPrice="ngModel" />
+          <div class="text-danger" *ngIf="originalPrice.invalid && originalPrice.touched">
+            Enter a valid price greater than zero.
+          </div>
+        </div>
+  
+        <!-- Discount Percentage -->
+        <div class="mb-3">
+          <label class="form-label">discount Percentage (INR)</label>
+          <input type="number" class="form-control" 
+          placeholder="Enter the discount percentage"
+          name="discountPercentage" [(ngModel)]="product.discountPercentage" min="0" #discountPercentage="ngModel" />
+          <div class="text-danger" *ngIf="discountPercentage?.touched && (discountPercentage?.value ?? 0) > (product.originalPrice ?? 0)">
+            Discount price must be lower than the original price.
+          </div>
+        </div>
+  
+        <!-- Product Category -->
+        <div class="mb-3">
+          <label class="form-label">Category</label>
+          <input type="text" class="form-control"  
+          placeholder="Enter the Product Category"
+          name="productCategory" [(ngModel)]="product.productCategory" #category="ngModel" required/>
+        
+          <div class="text-danger" *ngIf="category.invalid && category.touched">
+            Please Enter a category.
+          </div>
+        </div>
+  
+        <!-- Product Description -->
+        <div class="mb-3">
+          <label class="form-label">Description</label>
+          <textarea class="form-control" name="description" 
+          placeholder="Enter the Product Description"
+          [(ngModel)]="product.description" required minlength="10" #description="ngModel"></textarea>
+          <div class="text-danger" *ngIf="description.invalid && description.touched">
+            Description must be at least 10 characters.
+          </div>
+        </div>
+  
+        <!-- Product Quantity -->
+        <div class="mb-3">
+          <label class="form-label">Quantity</label>
+          <input type="number" class="form-control" 
+          placeholder="Enter the Product Quantity"
+          name="productQuantity" [(ngModel)]="product.productQuantity" required min="1" #productQuantity="ngModel" />
+          <div class="text-danger" *ngIf="productQuantity.invalid && productQuantity.touched">
+            product Quantity must be at least 1.
+          </div>
+        </div>
+  
+        <!-- Product Rating -->
+        <div class="mb-3">
+          <label class="form-label">Rating</label>
+          <div class="rating">
+            <span *ngFor="let star of [1, 2, 3, 4, 5]" (click)="setRating(star)">
+              <i class="bi" [ngClass]="star <= product.ratings ? 'bi-star-fill' : 'bi-star'"></i>
+            </span>
+          </div>
+        </div>
+  
+        <!-- Product Image Upload -->
+        <div class="mb-3">
+          <label class="form-label">Product Image</label>
+          
+          <input #inputFile type="file" class="form-control" (change)="onImageChange1(inputFile)"
+          name="imageupload"
+          accept="image/*" />
+
+          <div *ngIf="previewImage==null && !isImageSelect">
+            <img [src]="product.productImagePath" class="img-thumbnail mt-2" alt="Product Preview">
+          </div>
+
+          <div *ngIf="previewImage && isImageSelect">
+            <img [src]="previewImage" class="img-thumbnail mt-2" alt="Product Preview">
+          </div>
+
+
+
+        </div>
+  
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary w-100" [disabled]="productForm.invalid">Update Product</button>
+  
+      </form>
+    </div>
+  </div>
+  
+
+
+<app-footer ></app-footer>
